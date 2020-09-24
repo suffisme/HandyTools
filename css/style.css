@@ -1,0 +1,30 @@
+html,body{
+	margin : 0;
+	padding : 0;
+}
+
+#output
+{
+	display: none;
+	flex-direction: column;
+	scroll-behavior: auto;
+	overflow: scroll;
+	max-height: 80vh;
+	min-width: 30%;
+	padding : 1% 0;
+}
+
+.subhead
+{
+	padding:2%;
+}
+
+#output>span,h3{
+	margin-left: 4%;
+}
+
+#heading
+{
+	border-radius: 0;
+	text-align: center;
+}
