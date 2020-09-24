@@ -9,7 +9,7 @@ html,body{
 	flex-direction: column;
 	scroll-behavior: auto;
 	overflow: scroll;
-	max-height: 80vh;
+	max-height: 40vh;
 	min-width: 30%;
 	padding : 1% 0;
 }
@@ -23,8 +23,25 @@ html,body{
 	margin-left: 4%;
 }
 
+#output>span{
+	font-size: 24px;
+
+}
+
 #heading
 {
 	border-radius: 0;
 	text-align: center;
+}
+
+#image
+{
+	display: flex;
+	align-self: center;
+	justify-content: center;
+	text-align: center;
+}
+
+a{
+	color:#19f705
 }
