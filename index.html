@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Grey Code Generator</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="jumbotron bg-dark" id="heading">
+		<div class="bg-light subhead">
+			<h1>The Grey Code Generator</h1>
+		</div>
+	</div>	
+	<div class="container">
+		<label for="bits"><strong>Enter Number of Bits : </strong></label>
+		<input type="text" name="bits" id="bits">
+		<button onclick="grey_generate()" value="Submit" class="btn btn-dark">Submit</button>
+		<p>Note :  Use at max 15 bits </p>
+		<div id="output" class="text-light bg-dark mt-5">
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="js/script.js"></script>
+</html>
