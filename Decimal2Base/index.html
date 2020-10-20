@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Base Converter</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			margin : auto;
+			padding : 2%;
+			height:50vh;
+		}
+	</style>
+</head>
+<body class="bg-dark text-light">
+	<div class="jumbotron text-dark">
+		<center>
+			<h1>BASE CONVERTER</h1>
+			<p>By Sufiyan Ansari</p>
+		</center>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<h2>Base 10 to any Base</h2>
+				<div class="col">
+					<div class="row">
+						<input class="mr-1" type="text" id="dec" placeholder="Decimal">  <input class="ml-1" type="text" id="base" placeholder="Base">
+					</div>
+					<div class="row">
+						<button class="btn btn-warning mt-3" onclick="dec2base()">Calculate</button>
+					</div>
+				</div>
+				<p id="output" class="mt-4 text-light"></p>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
