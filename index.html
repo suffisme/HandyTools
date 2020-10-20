@@ -1,90 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Grey Code Generator</title>
-	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<title>Handy Tools</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
-<body>
-	<div class="jumbotron bg-dark" id="heading">
-		<div class="bg-light subhead">
-			<h1>The Grey Code Generator</h1>
-		</div>
-	</div>	
-	<div class="container">
+<body class="bg-dark">
+	<div class="jumbotron text-dark">
+		<center>
+			<h1>Handy Tools</h1>
+			<p>By Sufiyan Ansari</p>
+		</center>
+	</div>
+	<div class="container justify-content-center">
 		<div class="row">
-			<label for="bits">
-				<strong>Enter Number of Bits : &nbsp;</strong>
-			</label>
-			<input type="text" name="bits" id="bits">
-			&nbsp;
-			<button onclick="grey_generate()" value="Submit" class="btn btn-dark">Generate</button>
-		</div>
-		<div class="row">
-			<div class="col-sm-9">
-				<p>Note :  Use at max 16 bits </p>
-				<div id="image">
-					<img src="img/codex.jpg">
-				</div>
-				<div id="output" class="text-light bg-dark mt-5">
+			<div class="col-4">
+				<div class="body">
+					<div class="flip-card">
+					  <div class="flip-card-inner">
+					    <div class="flip-card-front bg-success p-4 text-light">
+					      	<h3><strong>Grey Code Converter</strong></h3>
+					      	<small>Hover Over Here.</small>
+					    </div>
+					    <div class="flip-card-back">
+					      <a class="btn btn-primary" href="GreyCodeGenerator/index.html">Click to Redirect</a>
+					    </div>
+					  </div>
+					</div>
 				</div>
 			</div>
-			<div class="col-sm-3">
-				<p>Connections : </p>
-				<img src="img/gate.jpg">				
+			<div class="col-4">
+				<div class="body">
+					<div class="flip-card">
+					  <div class="flip-card-inner">
+					    <div class="flip-card-front bg-secondary p-4 text-light">
+					      	<h3><strong>Phase Converter</strong></h3>
+					      	<small>Hover Over Here.</small>
+					    </div>
+					    <div class="flip-card-back">
+					      <a class="btn btn-primary" href="PhaseConverter/index.html">Click to Redirect</a>
+					    </div>
+					  </div>
+					</div>
+				</div>				
+			</div>
+			<div class="col-4">
+				<div class="body">
+					<div class="flip-card">
+					  <div class="flip-card-inner">
+					    <div class="flip-card-front bg-primary p-4 text-light">
+					      	<h3><strong>More Coming Soon.....</strong></h3>
+					    </div>
+					    <div class="flip-card-back">
+					      <button class="btn btn-primary">Stay Tuned</button>
+					    </div>
+					  </div>
+					</div>
+				</div>				
 			</div>
 		</div>
 	</div>
-
-	<!-- footer -->
-	<footer class="page-footer font-small blue pt-4 text-light bg-dark" style="margin-top: 2%;">
-	  	<div class="container-fluid text-center text-md-left">
-	   		<div class="row">
-	      		<div class="col-md-6 mt-md-0 mt-3">
-	        		<h5 class="text-uppercase">Page managed and run by SUFIYAN ANSARI</h5>
-	        		<p>You can contribute to the project by following these steps</p>
-	        		<ol>
-	        			<li>Fork it from <a href="https://github.com/suffisme/GreyCodeGenerator" target="_blank">Here</a>!</li>
-	        			<li>Clone it to your system.</li>
-	        			<li>Make certain changes and make a pull request from newly created branch.</li>
-	        		</ol>
-	      		</div>
-			    <hr class="clearfix w-100 d-md-none pb-3">
-	      		<div class="col-md-3 mb-md-0 mb-3">
-	        		<h5 class="text-uppercase">Other Github Repositories</h5>
-	        		<ul class="list-unstyled">
-		          		<li>
-		            		<a href="https://suffisme.github.io/PyVerse" target="_blank">PyVerse</a>
-		          		</li>
-		          		<li>
-		            		<a href="https://suffisme.github.io/NameWriter" target="_blank">Name Writer</a>
-		          		</li>
-		          		<li>
-		            		<a href="https://www.github.com/suffisme/Core-Programming" target="_blank">Core Programming</a>
-		          		</li>
-	        		</ul>
-	   	   		</div>
-	      		<div class="col-md-3 mb-md-0 mb-3">
-	        		<h5 class="text-uppercase">SOCIAL MEDIA</h5>
-				        <ul class="list-unstyled">
-				        	<li>
-					            <a href="https://www.linkedin.com/in/sufiyan-ansari-1823b2192/" target="_blank">Linkedin</a>
-					        </li>
-					        <li>
-					            <a href="https://www.facebook.com/sufffiyan" target="_blank">Facebook</a>
-					        </li>
-					        <li>
-					            <a href="https://www.instagram.com/im_suffi" target="_blank">Instagram</a>
-					        </li>
-					        
-			        	</ul>
-	      		</div>
-	   		</div>
-	  	</div>
-	  	<div class="footer-copyright text-center py-3">© 2020 Copyright:
-	    <a href="https://github.com/suffisme"> Sufiyan Ansari</a> | <a href="mailto:addsufiyan@gmail.com">Contact Me</a>
-	  </div>
-	</footer>
 </body>
-<script type="text/javascript" src="js/script.js"></script>
 </html>

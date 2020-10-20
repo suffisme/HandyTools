@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Polar to Coordinates</title>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<style type="text/css">
+		body{
+			margin : auto;
+			padding : 2%;
+			height:50vh;
+		}
+	</style>
+</head>
+<body class="bg-dark text-light">
+	<div class="jumbotron text-dark">
+		<center>
+			<h1>PHASE CONVERTER</h1>
+			<p>By Sufiyan Ansari</p>
+		</center>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-6">
+				<h2>Coordinates to Polar</h2>
+				<div class="col">
+					<div class="row">
+						<input type="text" id="real" placeholder="Real Part"> + <strong class="mr-2 ml-2">j</strong> <input type="text" id="img" placeholder="Imaginary Part">
+					</div>
+					<div class="row">
+						<button class="btn btn-warning mt-3" onclick="c2r()">Calculate</button>
+					</div>
+				</div>
+				<p id="output" class="mt-4"></p>
+			</div>
+
+			<div class="col-6">
+				<h2>Polar To Coordinates</h2>
+				<div class="col">
+					<div class="row">
+						<input type="text" id="mod" placeholder="mod"> <strong class="mr-2 ml-2">@</strong> <input type="text" id="angle" placeholder="angle">
+					</div>
+					<div class="row">
+					<button class="btn btn-primary mt-3" onclick="r2c()">Calculate</button>
+				</div>
+				<p id="output2" class="mt-4"></p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<h2>Complex Multiplier</h2>
+				<div class="col">
+					<div class="row">
+						<input type="text" id="realm1" placeholder="Real Part"> + <strong class="mr-2 ml-2">j</strong> <input type="text" id="imgm1" placeholder="Imaginary Part">
+					</div>
+					<div class="row">
+						<input type="text" id="realm2" placeholder="Real Part"> + <strong class="mr-2 ml-2">j</strong> <input type="text" id="imgm2" placeholder="Imaginary Part">
+					</div>
+					<div class="row">
+						<button class="btn btn-warning mt-3" onclick="complexProduct()">Calculate</button>
+					</div>
+				</div>
+				<p id="output3" class="mt-4"></p>
+			</div>
+
+			<div class="col-6">
+				<h2>Complex Quotient</h2>
+				<div class="col">
+					<div class="row">
+						<input type="text" id="reald1" placeholder="Real Part"> + <strong class="mr-2 ml-2">j</strong> <input type="text" id="imgd1" placeholder="Imaginary Part">
+					</div>
+					<div class="row">
+						<input type="text" id="reald2" placeholder="Real Part"> + <strong class="mr-2 ml-2">j</strong> <input type="text" id="imgd2" placeholder="Imaginary Part">
+					</div>
+					<div class="row">
+						<button class="btn btn-warning mt-3" onclick="complexQuotient()">Calculate</button>
+					</div>
+				</div>
+				<p id="output4" class="mt-4"></p>
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="script.js"></script>
+</html>
