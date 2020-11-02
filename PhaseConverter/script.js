@@ -19,7 +19,7 @@ const complexProduct = () =>{
 	var img1 = eval(document.getElementById('imgm1').value);
 	var real2 = eval(document.getElementById('realm2').value);
 	var img2 = eval(document.getElementById('imgm2').value);
-	document.getElementById('output3').innerHTML = String(real1*real2-img1*img2) + " + <strong> j </strong>" + String(real1*img2+real2*img1);
+	document.getElementById('output3').innerHTML = String((real1*real2-img1*img2).toFixed(6)) + " + <strong> j </strong>" + String((real1*img2+real2*img1).toFixed(6));
 }
 
 const complexQuotient = () =>{
@@ -29,5 +29,5 @@ const complexQuotient = () =>{
 	var img2 = eval(document.getElementById('imgd2').value);
 	var real = (real1*real2+img1*img2)/(real2**2 + img2**2);
 	var img = (real2*img1-img2*real1)/(real2**2 + img2**2);
-	document.getElementById('output4').innerHTML = String(real) + " + <strong> j </strong>" + String(img);
+	document.getElementById('output4').innerHTML = String(real.toFixed(6)) + " + <strong> j </strong>" + String(img.toFixed(6));
 }

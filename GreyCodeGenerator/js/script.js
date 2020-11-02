@@ -29,7 +29,7 @@ function grey_generate()
 		for(var i=0;i<2**bits;i++)
 		{
 			var tag = document.createElement("span");
-	   		var text = document.createTextNode(grey[i]);
+	   		var text = document.createTextNode((i+1) + '.) ' + ' ' +grey[i]);
 	   		tag.appendChild(text);
 	   		Par_element.appendChild(tag);	
 		}
