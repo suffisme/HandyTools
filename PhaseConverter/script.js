@@ -3,7 +3,15 @@ const c2r = () =>{
 	var img = eval(document.getElementById('img').value);
 	var mod = Math.sqrt(real**2 + img**2);
 	var angle = Math.atan(img/real)*180/Math.PI;
-	document.getElementById('output').innerHTML = String(mod.toFixed(6)) + "<strong> @ </strong>" + String((Math.atan(img/real)*180/Math.PI).toFixed(6));
+	if(real<0 && img>0)
+	{
+		angle += 180;
+	}
+	else if(real<0 && img<0)
+	{
+		angle = angle-180;
+	}
+	document.getElementById('output').innerHTML = String(mod.toFixed(6)) + "<strong> @ </strong>" + String((angle).toFixed(6));
 }
 
 const r2c = () =>{
