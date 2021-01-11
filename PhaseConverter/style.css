@@ -1,0 +1,9 @@
+body{
+    margin : auto;
+    padding : 2%;
+    height:50vh;
+}
+input{
+    border-radius:5px;
+    padding-left:5px;
+}
